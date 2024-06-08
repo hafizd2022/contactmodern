@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(240, 242, 243);
+        }
+
+        header{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        ul li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            margin: 70px auto;
+            width: 500px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            border-radius: 10px;
+            text-transform: capitalize;
+        }
+
+        form input {
+            display: block;
+            padding: 14px;
+            width: 400px;
+            background-color: transparent;
+            outline: none;
+            border: 1px solid rgb(185, 182, 182);
+            margin: 10px 0 30px 0px;
+            border-radius: 8px;
+        }
+
+        ::placeholder {
+            font-size: 20px;
+        }
+        .btn {
+            width: 100px;
+            padding: 10px;
+            border: 0;
+            outline: none;
+            background-color: black;
+            color: white;
+            margin-bottom: 40px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            opacity: 0.7;
+        }
+
+        .btn2:hover {
+            background-color: rgb(148, 146, 146);
+        }
+
+        section p {
+            color: black;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: capitalize;
+        }
+
+        section p span {
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        section h2 {
+            margin-bottom: 30px;
+            text-align: center;
+            margin-top: 20px;
+            
+        }
+
+        section form .text {
+            color: rgb(169, 168, 168);
+            margin-bottom: 0;
+            font-weight: 300;
+        }
+
+        .btn2 {
+            width: 100px;
+            padding: 10px;
+            border: 0;
+            outline: none;
+            background-color: rgb(219, 219, 219);
+            color: black;
+            margin-bottom: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>KomputerLab</h1>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Gallery</a></li>
+            <li><a href="/">Team</a></li>
+            <li><a href="/">Download</a></li>
+        </ul>
+    </header>
+    <main>
+        <section>
+           <form action="https://httpbin.org/get" method="GET">
+            <h2>Hampir ke sana</h2>
+            <p class="text">Harap mengisi data username dan password anda dengan benar di sistem kami!</p>
+            <h4>Nama Depan:</h4>
+            <input type="text" placeholder="Nama Depan" required>
+            <h4>Nama Belakang:</h4>
+            <input type="text" placeholder="Nama Belakang" required>
+            <h4>Sandi:</h4>
+            <input type="password" placeholder="Isi Sandi" required>
+            <h4>Waktu:</h4>
+            <input type="date" placeholder="date" required>
+            <button type="submit" class="btn">Kirim</button>
+            <button type="reset" class="btn2">Reset</button>
+           </form>
+           <p>apakah anda belum menerima kode? <span>Minta Kode</span></p>
+           <p>terima kebijakan dan pengurusan untuk menerima keadilan!</p>
+        </section>
+    </main>
+</body>
+</html>
